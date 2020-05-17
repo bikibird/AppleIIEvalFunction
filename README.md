@@ -4,7 +4,7 @@ An Apple II extension to Applesoft allow user input to be evaluated.
 # Forward
 I wrote this small utility to extend Applesoft with an eval function back in 1988.  I intended to submit it for publication to one of the various Apple II magazines publishing in those days, but I never did.
 
-On the off chance that you, dear retrocomputerist, find it useful, I publish it here, complete with source code for armchair enjoyment or your own fabulous retro project.  The utility and demo are quite short and so, in the spirit of the computer magazines of yore, if you want to try it out, you will actually have to key it in. 
+On the off chance that you, dear retrocomputerist, find it useful, I publish it here, complete with source code, for armchair enjoyment or your own fabulous retro project.  The utility and demo are quite short and so, in the spirit of the computer magazines of yore, if you want to try it out, you will actually have to key it in. 
 
 __Warning: I think this eval function may be evil.  I've forgotten much about Applesoft internals, but it appears this allows your user to input aribitrary Applesoft and have it tokenized and executed.  Could a user of your program enter instructions to format a floppy disk instead of a mathematical formula? Quit possibly. Use with caution.__
 
