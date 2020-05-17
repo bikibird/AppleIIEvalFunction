@@ -44,7 +44,54 @@ Run the graph program and try this input. The program will draw a sine wave. The
 The Eval Routine is a useful and convenient routine for both the user and the programmer. It will save time and exasperation on the user's part and give the programmer more flexibility.
 
 # Listing One— EVAL
-
+```
+0300: 20 be de 20 e3 df a0 00
+0308: b1 83 aa c8 b1 83 85 06
+0310: c8 b1 83 85 07 8a a8 b1
+0318: 06 99 00 02 88 d0 f8 b1
+0320: 06 99 00 02 a5 b8 48 a5
+0328: b9 48 20 39 d5 e8 86 b8
+0330: c8 84 b9 20 59 d5 20 b1
+0338: 00 20 67 dd 68 85 b9 68
+0340: 85 b8 20 be de 20 e3 df
+0348: aa 20 2b eb 20 b7 00 60
+```
+__BSAVE EVAL 768, 80__
 # Listing Two— GRAPH
-
+```
+ 10  REM  GRAPH PROGRAM BY JENNY SCHMIDT. AUGUST 20, 1988.
+ 20  REM GRAPHING PROGRAM TO DEMONSTRATE EVALUATED INPUT
+ 30  PRINT  CHR$ (4);"BLOAD EVAL,A$300"
+ 40  PRINT "THIS PROGRAM GRAPHS MATHEMATICAL        FUNCTIONS. FIRST ENTER THE PORTION OF   AXES YOU WANT ON THE SCREEN. THEN ENTER"
+ 50  PRINT "THE FUNCTION AS A FUNCTION OF X AND IN  APPLESOFT SYNTAX. (I.E. X+X^2-SIN(X) )"
+ 60  PRINT "FINALLY ENTER THE RANGE OF THE X        VARIABLE AND THE INCREMENT BETWEEN      PLOTTING POINTS."
+ 70  PRINT : PRINT 
+ 80 FR = 768:PI = 3.141592
+ 90  INPUT "X-AXIS RANGE LOW:";A$: CALL FR,A$,XL
+ 100  INPUT "X-AXIS RANGE HIGH:";A$: CALL FR,A$,XH
+ 110  INPUT "Y-AXIS RANGE LOW:";A$: CALL FR,A$,YL
+ 120  INPUT "Y-AXIS RANGE HIGH:";A$: CALL FR,A$,YH
+ 130  INPUT "F(X)=";F$
+ 140  INPUT "X RANGE LOW:";A$: CALL FR,A$,X1
+ 150  INPUT "X RANGE HIGH:";A$: CALL FR,A$,X2
+ 160  INPUT "X INCREMENT:";A$: CALL FR,A$,IN
+ 170 Y0 = 159 + YL / (YH - YL) * 159:X0 =  - XL / (XH - XL) * 199
+ 180  HGR : HCOLOR= 3: IF YL < 0 AND YH > 0 THEN  HPLOT 0,Y0 TO 199,Y0
+ 190  IF XL < 0 AND XH > 0 THEN  HPLOT X0,0 TO X0,159
+ 200 X = X1: CALL FR,F$,N:YP = Y0 - (N / (YH - YL)) * 159:XP = X0 + (X / (XH - XL)) * 199
+ 210  GOSUB 300
+ 220  HPLOT XP,YP
+ 230  FOR X = X1 TO X2 + IN STEP IN
+ 240  CALL FR,F$,N:YP = Y0 - (N / (YH - YL)) * 159:XP = X0 + (X / (XH - XL)) * 199
+ 250  GOSUB 300
+ 260  HPLOT  TO XP,YP
+ 270  NEXT X
+ 280  INPUT "MAKE NEW GRAGH?";A$: IF  LEFT$ (A$,1) <  > "N" THEN  TEXT : PRINT : GOTO 40
+ 290  END 
+ 300  IF YP < 0 THEN YP = 0
+ 310  IF YP > 159 THEN YP = 159
+ 320  RETURN 
+```
+__SAVE GRAPH__
 # Listing Three— EVAL SOURCE CODE
+
