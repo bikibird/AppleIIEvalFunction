@@ -27,8 +27,11 @@ The user may use variables in your program as part of the expression. For exampl
 Listing two, a program that graphs user entered functions, shows a very interesting use of the Eval Routine. The graph program asks the user to enter a expression containing the variable X. The program then evaluates the user's expression over and over allowing X to vary over a pre-selected range and graphs the result.
 
 The following input will graph a sine function:
+
      X-axis range low: -2*PI
+     
      X-axis range high: 2*PI
+     
      Y-axis range low: -1
      Y-axis range high: 1
      F(X) = SIN (X)
