@@ -2,7 +2,7 @@
 An Apple II extension to Applesoft allow user input to be evaluated.
 
 # Forward
-I wrote this small utility to extend Applesoft with an eval function back in 1988.  I intended to submit it for publication to one of the various Apple II magazines publishing in those days, but I never did.
+I wrote this small utility to extend Applesoft with an eval function back in 1988.  I intended to submit it for publication to one of the various Apple II magazines publishing hobby content in those days, but I never did.
 
 On the off chance that you, dear retrocomputerist, find it useful, I publish it here, complete with source code, for armchair enjoyment or your own fabulous retro project.  The utility and demo are quite short and so, in the spirit of the computer magazines of yore, if you want to try it out, you will actually have to key it in. 
 
