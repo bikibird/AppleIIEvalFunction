@@ -29,9 +29,7 @@ Listing two, a program that graphs user entered functions, shows a very interest
 The following input will graph a sine function:
 
      X-axis range low: -2*PI
-     
      X-axis range high: 2*PI
-     
      Y-axis range low: -1
      Y-axis range high: 1
      F(X) = SIN (X)
@@ -43,8 +41,8 @@ Run the graph program and try this input. The program will draw a sine wave. The
 
 The Eval Routine is a useful and convenient routine for both the user and the programmer. It will save time and exasperation on the user's part and give the programmer more flexibility.
 
-#Listing One-- EVAL
+# Listing One— EVAL
 
-#Listing Two-- GRAPH
+# Listing Two— GRAPH
 
-#Listing Three-- EVAL SOURCE CODE
+# Listing Three— EVAL SOURCE CODE
