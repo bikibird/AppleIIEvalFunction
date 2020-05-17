@@ -6,9 +6,9 @@ I wrote this small utility to extend Applesoft with an eval function back in 198
 
 On the off chance that you, dear retrocomputerist, find it useful, I publish it here, complete with source code for armchair enjoyment or your own fabulous retro project.  The utility and demo are quite short and so, in the spirit of the computer magazines of yore, if you want to try it out, you will actually have to key it in. 
 
-__Warning: Is this eval function evil?  Does it allow your user to input aribitrary Applesoft?  I honestly don't remember.  Use with caution.__
+__Warning: I think this eval function may be evil.  I've forgotten much about Applesoft internals, but it appears this allows your user to input aribitrary Applesoft and have it tokenized and executed.  Could a user of your program enter instructions to format a floppy disk instead of a mathematical formula? Quit possibly. Use with caution.__
 
-The text of the article is a first draft and could use a good edit.  I left it as-is for an authenticity's sake.
+The text of the article is as I found it on an old diskette. I left it as-is for  authenticity's sake.  It's a first draft and could use a good edit.  
 
 # Original Article
 The following routine will make life easier both for the Applesoft programmer and user. _The Eval Routine_ is an extended version of the VAL function. It allows the user to enter numerical input in expression form. For example the user may enter something like SIN(1.5)+2-COS(3.14)/5 and the routine will evaluate the expression and store the result in a specified variable. The user is no longer forced to calculate any values when entering numbers.
